@@ -1,0 +1,48 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "drpcivDataLake",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "drpcivExport",
+          "isExpression": false,
+          "displayName": "AssetName"
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "ProcesesToBeRestarted",
+          "isExpression": false,
+          "displayName": "QueueName"
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "process",
+      "value": {
+        "name": {
+          "defaultValue": "DSIRO_RestartProcess",
+          "isExpression": false,
+          "displayName": "ProcessName"
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

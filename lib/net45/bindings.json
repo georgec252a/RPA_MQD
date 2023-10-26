@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "drpcivDataLake",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "drpcivExport",
+          "isExpression": false,
+          "displayName": "AssetName"
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "drpcivExport",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "drpcivDataLake",
+          "isExpression": false,
+          "displayName": "AssetName"
+        }
+      }
+    },
+    {
+      "resource": "queue",
+      "metadata": {
+        "name": {
+          "defaultValue": "ProcesesToBeRestarted",
+          "isExpression": false,
+          "displayName": "QueueName"
+        }
+      }
+    },
+    {
+      "resource": "process",
+      "metadata": {
+        "name": {
+          "defaultValue": "DSIRO_RestartProcess",
+          "isExpression": false,
+          "displayName": "ProcessName"
+        }
+      }
+    }
+  ]
+}
