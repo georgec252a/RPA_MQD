@@ -10,7 +10,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1212.8,5416.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1794.4,3519.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="27">
@@ -73,9 +73,10 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ManageFolders" sap:VirtualizedContainerService.HintSize="1167.2,5352" sap2010:WorkflowViewState.IdRef="Sequence_21">
+  <Sequence DisplayName="ManageFolders" sap:VirtualizedContainerService.HintSize="763.2,3454.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="folderArr" />
       <Variable x:TypeArguments="x:String" Name="folderName" />
@@ -92,30 +93,30 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1104.8,5240" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="721.6,3361.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try body" sap:VirtualizedContainerService.HintSize="1068,5008.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+        <Sequence DisplayName="Try body" sap:VirtualizedContainerService.HintSize="684.8,3130.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="DeleteOldFiles" sap:VirtualizedContainerService.HintSize="1005.6,2647.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="DeleteOldFiles" sap:VirtualizedContainerService.HintSize="643.2,3037.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Start deleting the old folders&quot;]" />
-            <ui:PathExists DisplayName="Path Exists" Exists="[pathExists]" sap:VirtualizedContainerService.HintSize="644.8,90.4" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[in_Config(&quot;downloadLocation&quot;).ToString]" PathType="Folder" />
-            <If Condition="[pathExists &lt;&gt; True]" sap:VirtualizedContainerService.HintSize="644.8,269.6" sap2010:WorkflowViewState.IdRef="If_7">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="601.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Start deleting the old folders&quot;]" />
+            <ui:PathExists DisplayName="Path Exists" Exists="[pathExists]" sap:VirtualizedContainerService.HintSize="601.6,90.4" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[in_Config(&quot;downloadLocation&quot;).ToString]" PathType="Folder" />
+            <If Condition="[pathExists &lt;&gt; True]" sap:VirtualizedContainerService.HintSize="601.6,269.6" sap2010:WorkflowViewState.IdRef="If_7">
               <If.Then>
                 <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[in_Config(&quot;downloadLocation&quot;).ToString]" />
               </If.Then>
             </If>
-            <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="644.8,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[in_Config(&quot;downloadLocation&quot;).ToString &amp; in_timeStamp]" />
-            <Assign DisplayName="Get the now date" sap:VirtualizedContainerService.HintSize="644.8,80.8" sap2010:WorkflowViewState.IdRef="Assign_29">
+            <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="601.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[in_Config(&quot;downloadLocation&quot;).ToString &amp; in_timeStamp]" />
+            <Assign DisplayName="Get the now date" sap:VirtualizedContainerService.HintSize="601.6,60" sap2010:WorkflowViewState.IdRef="Assign_29">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[nowDate]</OutArgument>
               </Assign.To>
@@ -123,14 +124,14 @@
                 <InArgument x:TypeArguments="x:String">[Now.ToString("dd/MM/yyyy")]</InArgument>
               </Assign.Value>
             </Assign>
-            <Sequence DisplayName="Delete old files on Local" sap:VirtualizedContainerService.HintSize="644.8,1588" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <Sequence DisplayName="Delete old files on Local" sap:VirtualizedContainerService.HintSize="601.6,1405.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="582.4,80.8" sap2010:WorkflowViewState.IdRef="Assign_30">
+              <Assign sap:VirtualizedContainerService.HintSize="560,60" sap2010:WorkflowViewState.IdRef="Assign_30">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:String[]">[folderArr]</OutArgument>
                 </Assign.To>
@@ -138,7 +139,7 @@
                   <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories(in_Config("downloadLocation").ToString)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="582.4,80.8" sap2010:WorkflowViewState.IdRef="Assign_31">
+              <Assign sap:VirtualizedContainerService.HintSize="560,60" sap2010:WorkflowViewState.IdRef="Assign_31">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                 </Assign.To>
@@ -146,19 +147,19 @@
                   <InArgument x:TypeArguments="x:Int32">0</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="582.4,1234.4" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[folderArr]">
+              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="560,1112.8" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[folderArr]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547.2,1109.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,988" sap2010:WorkflowViewState.IdRef="Sequence_18">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="484.8,80.8" sap2010:WorkflowViewState.IdRef="Assign_32">
+                      <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_32">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[folderName]</OutArgument>
                         </Assign.To>
@@ -166,7 +167,7 @@
                           <InArgument x:TypeArguments="x:String">[Path.GetFileName(folderArr(i)).ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="484.8,80.8" sap2010:WorkflowViewState.IdRef="Assign_33">
+                      <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_33">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[folderDate]</OutArgument>
                         </Assign.To>
@@ -174,7 +175,7 @@
                           <InArgument x:TypeArguments="x:String" xml:space="preserve">[folderName.SubString(6, 2) &amp; "/" &amp; folderName.SubString(4, 2)  &amp; "/" &amp; Left(folderName,4)]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="484.8,80.8" sap2010:WorkflowViewState.IdRef="Assign_34">
+                      <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_34">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int64">[dateDifference]</OutArgument>
                         </Assign.To>
@@ -182,7 +183,7 @@
                           <InArgument x:TypeArguments="x:Int64">[dateDiff(DateInterval.Day,DateTime.ParseExact(folderDate,"dd/MM/yyyy",system.globalization.cultureinfo.invariantculture), DateTime.ParseExact(nowDate,"dd/MM/yyyy",system.globalization.cultureinfo.invariantculture))]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[dateDifference &gt;= 5]" sap:VirtualizedContainerService.HintSize="484.8,514.4" sap2010:WorkflowViewState.IdRef="If_8">
+                      <If Condition="[dateDifference &gt;= 5]" sap:VirtualizedContainerService.HintSize="483.2,495.2" sap2010:WorkflowViewState.IdRef="If_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,14 +191,14 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="449.6,325.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence sap:VirtualizedContainerService.HintSize="375.2,306.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:Delete ContinueOnError="{x:Null}" DisplayName="Delete the old folders" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="Delete_5" Path="[folderArr(i).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Folder &quot; &amp; folderName &amp; &quot; deleted&quot;]">
+                            <ui:Delete ContinueOnError="{x:Null}" DisplayName="Delete the old folders" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="Delete_5" Path="[folderArr(i).ToString]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Folder &quot; &amp; folderName &amp; &quot; deleted&quot;]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -208,7 +209,7 @@
                           </Sequence>
                         </If.Then>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="484.8,80.8" sap2010:WorkflowViewState.IdRef="Assign_35">
+                      <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_35">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                         </Assign.To>
@@ -227,91 +228,37 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
             </Sequence>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Finished deleting the old folders&quot;]" />
-          </Sequence>
-          <Sequence DisplayName="Start NodeJs" sap:VirtualizedContainerService.HintSize="1005.6,2209.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="943.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;Check for the Node Server Folder&quot;]" />
-            <ui:PathExists DisplayName="Path Exists" Exists="[pathExists]" sap:VirtualizedContainerService.HintSize="943.2,90.4" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="[in_Config(&quot;LocalNodePath&quot;).ToString]" PathType="Folder" />
-            <If Condition="[pathExists &lt;&gt; True]" DisplayName="Create the local folder" sap:VirtualizedContainerService.HintSize="943.2,670.4" sap2010:WorkflowViewState.IdRef="If_9">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item in Save_Path_Global" sap:VirtualizedContainerService.HintSize="601.6,572.8" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[Directory.GetFiles( &quot;\\lab3D01\lab3d\CV_TL\Wenzel_3_232837V_G11244\PDFResults\Teste Catalin\Arbre secondaireþCouple 15X71þ2_Rasage&quot;)]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,448" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;downloadLocation&quot;).ToString &amp; in_timeStamp]" DisplayName="Copy Files from Sharepoint to local folder" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="False" Path="[item]" />
+                    <Delay DisplayName="Delay" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[Path.GetFileName(item.ToString) &amp; &quot; copied&quot;]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If.Then>
-                <Sequence DisplayName="Creat the folder" sap:VirtualizedContainerService.HintSize="449.6,325.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[in_Config(&quot;LocalNodePath&quot;).ToString]" />
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Local Node Server folder created&quot;]" />
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="449.6,511.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="DeleteFolderX_1" Path="[in_Config(&quot;LocalNodePath&quot;).ToString]" Recursive="True" />
-                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                  <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_6" Path="[in_Config(&quot;LocalNodePath&quot;).ToString]" />
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[&quot;Local Node Server folder created&quot;]" />
-                </Sequence>
-              </If.Else>
-            </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="943.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;Copy Node Server&quot;]" />
-            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;LocalNodePath&quot;).ToString &amp; in_Config(&quot;NodeServerName&quot;).ToString]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="943.2,160" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[in_userProfilePath + in_Config(&quot;SharePointNodePath&quot;).ToString &amp; in_Config(&quot;NodeServerName&quot;).ToString]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="943.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;Start Node Server&quot;]" />
-            <Assign sap:VirtualizedContainerService.HintSize="943.2,80.8" sap2010:WorkflowViewState.IdRef="Assign_37">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[nodeFullPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[in_Config("LocalNodePath").ToString &amp; in_Config("NodeServerName").ToString]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="943.2,80.8" sap2010:WorkflowViewState.IdRef="Assign_38">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[nodeServerName]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[in_Config("NodeServerName").ToString]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'sparcdbserver.exe  C:\U...'" FileName="[nodeFullPath]" sap:VirtualizedContainerService.HintSize="943.2,416.8" sap2010:WorkflowViewState.IdRef="OpenApplication_2" InformativeScreenshot="66fcfb4fa4fdaa8dc8f53d4ddedbe33b" Selector="[String.Format(&quot;&lt;wnd app='{0}' cls='ConsoleWindowClass' title='{1}' /&gt;&quot;, nodeServerName, nodeFullPath)]">
-              <ui:OpenApplication.Body>
-                <ActivityAction x:TypeArguments="x:Object">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,269.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;Wait for Node server to start&quot;]" />
-                    <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_6" />
-                  </Sequence>
-                </ActivityAction>
-              </ui:OpenApplication.Body>
-            </ui:OpenApplication>
+            </ui:ForEach>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="601.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Finished deleting the old folders&quot;]" />
           </Sequence>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1071.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="688,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -322,7 +269,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Throw Exception="[exception]" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            <Throw Exception="[exception]" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>

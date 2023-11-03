@@ -3,12 +3,19 @@
   "description": "MQD",
   "main": "Main.xaml",
   "dependencies": {
+    "BitMiracle.Docotic.Pdf": "9.1.15876",
+    "PdfiumViewer": "2.13.0",
+    "PdfSharpCore.Charting": "1.3.62",
+    "Syncfusion.Pdf.Net.Core": "23.1.42",
+    "UiPath.AdobePdfServices.IntegrationService.Activities": "4.0.6",
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",
+    "UiPath.PDF.Activities": "3.16.0",
     "UiPath.System.Activities": "[21.10.3]",
     "UiPath.Testing.Activities": "[1.4.4]",
     "UiPath.UIAutomation.Activities": "[21.10.4]",
-    "UiPath.WebAPI.Activities": "[1.9.2]"
+    "UiPath.WebAPI.Activities": "[1.9.2]",
+    "Xceed.Pdf": "2.0.21359.11160"
   },
   "webServices": [],
   "entitiesStores": [],
