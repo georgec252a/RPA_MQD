@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2626.4,6421.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2626.4,6836</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GenerateCSVFiles_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
@@ -109,7 +109,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GenerateCSVFiles" sap:VirtualizedContainerService.HintSize="1041.6,6356.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GenerateCSVFiles" sap:VirtualizedContainerService.HintSize="1041.6,6771.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="extractedFile" />
       <Variable x:TypeArguments="ui:WorkbookApplication" Name="WrkBk" />
@@ -141,9 +141,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1000,6264" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1000,6678.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try body" sap:VirtualizedContainerService.HintSize="963.2,6032.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Try body" sap:VirtualizedContainerService.HintSize="963.2,6447.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -202,28 +202,28 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ForEach>
-          <Sequence DisplayName="Generate the CSVs" sap:VirtualizedContainerService.HintSize="921.6,5104.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Generate the CSVs" sap:VirtualizedContainerService.HintSize="921.6,5519.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:BuildDataTable DataTable="[newVehicles]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="720.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;County&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Vehicle_brand&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Brand_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Brand_extension&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Brand_Version&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Commercial_description&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Subcategory&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Body_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Number_of_seat&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Cylinder_capacity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Power_kw&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Fuel_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Traction_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Max_length&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Weight&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Authorized_weight&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Max_auth_weight&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Height&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Number_of_axle&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Manufacture_year&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Type_of_Owner&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Owner_quality&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;User&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;User_quality&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;User_county&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Registration_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_registration_date_x0028_LLAAAA_x0029_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Romania_first_registration_date_x0028_LLAAAA_x0029_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Category&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Luna&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;An&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tip&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="720.8,3690.4" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Directory.GetFiles(in_config(&quot;downloadLocation&quot;).ToString &amp; in_timeStamp).Where(Function(x) x.Contains(&quot;.xlsx&quot;))]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="720.8,4104.8" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Directory.GetFiles(in_config(&quot;downloadLocation&quot;).ToString &amp; in_timeStamp).Where(Function(x) x.Contains(&quot;.xlsx&quot;))]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="file" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="685.6,3565.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence sap:VirtualizedContainerService.HintSize="685.6,3980" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <TryCatch DisplayName="Try Catch Read PDF" sap:VirtualizedContainerService.HintSize="644,1699.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch DisplayName="Try Catch Read PDF" sap:VirtualizedContainerService.HintSize="561.6,2574.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                       <TryCatch.Try>
-                        <Sequence sap:VirtualizedContainerService.HintSize="375.2,1468" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence sap:VirtualizedContainerService.HintSize="524.8,2343.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="variable2" />
                             <Variable x:TypeArguments="x:String" Name="fHa1Gauche" />
@@ -245,8 +245,8 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:ReadPDFText DisplayName="Read PDF Text" FileName="C:\Users\bw67213\OneDrive - Alliance\3. RPA\2. Proiecte in dezvoltare\5. MQD\Fisiere MQD\Teste\Arbre secondaireþCouple 15X71þ5_Termine\Arbre secondaireþCouple 15X71þ5_Termine_322416095R_20230412_222753.pdf" sap:VirtualizedContainerService.HintSize="333.6,83.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" PreserveFormatting="False" Range="All" Text="[extractedFile]" />
-                          <Assign DisplayName="Extrage ziua din data din PDF" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                          <ui:ReadPDFText DisplayName="Read PDF Text" FileName="C:\Users\bw67213\OneDrive - Alliance\3. RPA\2. Proiecte in dezvoltare\5. MQD\Fisiere MQD\Teste\Arbre secondaireþCouple 15X71þ5_Termine\Arbre secondaireþCouple 15X71þ5_Termine_322416095R_20230412_222753.pdf" sap:VirtualizedContainerService.HintSize="483.2,83.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" PreserveFormatting="False" Range="All" Text="[extractedFile]" />
+                          <Assign DisplayName="Extrage ziua din data din PDF" sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[dataText]</OutArgument>
                             </Assign.To>
@@ -254,8 +254,8 @@
                               <InArgument x:TypeArguments="x:String">[extractedFile.Substring(System.Text.RegularExpressions.Regex.Match(extractedFile,"\d\d\.\d\d\.\d\d\d\d").Index,2)]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:LogMessage DisplayName="LOG Extrage ziua din data din PDF" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[dataText]" />
-                          <Assign DisplayName="Extrage referinta de piesa din PDF" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                          <ui:LogMessage DisplayName="LOG Extrage ziua din data din PDF" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[dataText]" />
+                          <Assign DisplayName="Extrage referinta de piesa din PDF" sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_16">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[referintaPieceText]</OutArgument>
                             </Assign.To>
@@ -263,8 +263,8 @@
                               <InArgument x:TypeArguments="x:String">[extractedFile.Substring(System.Text.RegularExpressions.Regex.Match(extractedFile,"Numéro pièce: \d\d\d\d\d\d\d\d\dR").Index+14,10)]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:LogMessage DisplayName="LOG Extrage referinta de piesa din PDF" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[referintaPieceText]" />
-                          <Assign DisplayName="Extrage cuplul din PDF" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                          <ui:LogMessage DisplayName="LOG Extrage referinta de piesa din PDF" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[referintaPieceText]" />
+                          <Assign DisplayName="Extrage cuplul din PDF" sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_17">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[cupluText]</OutArgument>
                             </Assign.To>
@@ -272,96 +272,221 @@
                               <InArgument x:TypeArguments="x:String">[extractedFile.Substring(System.Text.RegularExpressions.Regex.Match(extractedFile,"/Couple \d\dX\d\d/").Index+8,5)]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:LogMessage DisplayName="LOG Extrage cuplul din PDF" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[cupluText]" />
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract ffa" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
-                              </InArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Droit" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Droit" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Droit" />
-                              </OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
-                                <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+ffa\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
-                              </InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract fHa" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
-                              </InArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Droit" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Droit" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Droit" />
-                              </OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
-                                <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+fHa\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
-                              </InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract Calfa" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
-                              </InArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="calfa1Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="calfa2Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="calfa3Gauche" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="calfa1Droit" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="calfa2Droit" />
-                              </OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
-                                <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="calfa3Droit" />
-                              </OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
-                                <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+Calfa\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
-                              </InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[extractedFile]" />
+                          <ui:LogMessage DisplayName="LOG Extrage cuplul din PDF" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[cupluText]" />
+                          <If Condition="[System.Text.RegularExpressions.Regex.Match(extractedFile,&quot;FLANC GAUCHE  TIRAGE FLANC DROIT  RETRO&quot;).Value.CompareTo(&quot;FLANC GAUCHE  TIRAGE FLANC DROIT  RETRO&quot;)=0]" DisplayName="If is present - FLANC GAUCHE + FLANC DROIT" sap:VirtualizedContainerService.HintSize="483.2,1296" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="375.2,1107.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="ffB1Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="ffB2Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="ffB3Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="ffB1Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="ffB2Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="ffB3Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="fHB3Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="fHB1Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="fHB2Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="fHB3Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="fHB1Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="fHB2Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="CB3Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="CB1Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="CB2Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="CB3Gauche" />
+                                  <Variable x:TypeArguments="x:String" Name="CB1Droit" />
+                                  <Variable x:TypeArguments="x:String" Name="CB2Droit" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[&quot;OK&quot;]" />
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract ffa" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
+                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Droit" />
+                                    </OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
+                                      <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+ffa\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
+                                    </InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract fHa" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
+                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa1Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa2Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHa3Droit" />
+                                    </OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
+                                      <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+fHa\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
+                                    </InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract Calfa" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
+                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB1Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB2Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB3Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB1Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB2Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB3Droit" />
+                                    </OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
+                                      <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+Calfa\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
+                                    </InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract ffB" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
+                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB1Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB2Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB3Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB1Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB2Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ffB3Droit" />
+                                    </OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
+                                      <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+ffß\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
+                                    </InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract fHB" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
+                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHB1Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHB2Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHB3Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHB1Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHB2Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="fHB3Droit" />
+                                    </OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
+                                      <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+fHß\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
+                                    </InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extract CB" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ExtractFromTable.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="extractedFile">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="extractedFile" />
+                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CB1Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CB2Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Gauche">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CB3Gauche" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val1Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CB1Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val2Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CB2Droit" />
+                                    </OutArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="val3Droit">
+                                      <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CB3Droit" />
+                                    </OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="regExExpression">
+                                      <Literal x:TypeArguments="x:String">\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?\s+Cß\*\s([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))? ([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?</Literal>
+                                    </InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[extractedFile]" />
                         </Sequence>
                       </TryCatch.Try>
                       <TryCatch.Catches>
-                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="528,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
